@@ -590,3 +590,24 @@ img {
         font-size: 1.25rem;
     }
 }
+
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-img {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+}
+
+.logo-text {
+    font-weight: 700;
+}

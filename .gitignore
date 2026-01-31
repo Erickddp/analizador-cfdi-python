@@ -1,0 +1,25 @@
+# Entorno virtual
+.venv/
+
+# Builds
+build/
+dist/
+
+# PyInstaller
+*.spec
+
+# Archivos generados
+*.exe
+*.zip
+*.pdf
+
+# PERMITIR ZIP PÚBLICO DE LA DEMO (GitHub Pages)
+!docs/assets/downloads/AnalizadorCFDI.zip
+
+# Caché Python
+__pycache__/
+*.pyc
+
+# Sistema
+.DS_Store
+Thumbs.db
