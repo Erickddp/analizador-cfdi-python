@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Demo técnica del Analizador CFDI. Herramienta de análisis fiscal masivo, KPIs y exportación automática.">
+    <title>Analizador CFDI — Demo Técnica</title>
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <span class="logo">Analizador CFDI</span>
+            <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema">
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="badge-container">
+                <span class="badge">Demo Técnica</span>
+            </div>
+            <h1>Analizador CFDI</h1>
+            <p class="subtitle">
+                Carga masiva de XML, clasificación de ingresos y egresos,
+                KPIs financieros, exportación a Excel y reporte PDF.
+            </p>
+            <p class="description">
+                Esta es una demo técnica. La herramienta puede personalizarse según reglas fiscales, flujos y necesidades de cada cliente.
+            </p>
+            <div class="hero-actions">
+                <a href="assets/downloads/AnalizadorCFDI.zip" class="btn btn-primary">Descargar demo</a>
+            </div>
+            <p class="hero-note">Versión portable para Windows</p>
+        </div>
+    </header>
+
+    <!-- ¿Qué hace? -->
+    <section class="section features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Capacidades Clave</h2>
+                <p>Automatización inteligente para procesos contables.</p>
+            </div>
+            <div class="grid features-grid">
+                <article class="card feature-card">
+                    <div class="icon">⚡</div>
+                    <h3>Carga Masiva</h3>
+                    <p>Procesamiento rápido de miles de archivos XML CFDI simultáneamente.</p>
+                </article>
+                <article class="card feature-card">
+                    <div class="icon">📂</div>
+                    <h3>Clasificación Auto</h3>
+                    <p>Organización automática por RFC, tipo de comprobante y fecha.</p>
+                </article>
+                <article class="card feature-card">
+                    <div class="icon">📊</div>
+                    <h3>KPIs Financieros</h3>
+                    <p>Visualización inmediata de ingresos, egresos y balances en pantalla.</p>
+                </article>
+                <article class="card feature-card">
+                    <div class="icon">📑</div>
+                    <h3>Excel Estructurado</h3>
+                    <p>Exportación limpia y ordenada lista para trabajar en hojas de cálculo.</p>
+                </article>
+                <article class="card feature-card">
+                    <div class="icon">📄</div>
+                    <h3>Reporte PDF</h3>
+                    <p>Generación de resumen ejecutivo de 1 hoja listo para imprimir.</p>
+                </article>
+                <article class="card feature-card">
+                    <div class="icon">🔒</div>
+                    <h3>100% Local</h3>
+                    <p>Tus datos nunca salen de tu equipo. Privacidad total offline.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnologías -->
+    <section class="section tech bg-subtle">
+        <div class="container">
+            <div class="section-header">
+                <h2>Stack Tecnológico</h2>
+                <p>Arquitectura pensada para estabilidad, rendimiento y personalización por cliente.</p>
+            </div>
+            <ul class="tech-list">
+                <li>Python 3</li>
+                <li>PySide6 (Qt)</li>
+                <li>XML CFDI 4.0 / 3.3</li>
+                <li>Pandas</li>
+                <li>Matplotlib</li>
+                <li>ReportLab</li>
+                <li>Excel Auto</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="section gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galería de la Aplicación</h2>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    
+                    <div class="slide">
+                        <img
+                            src="assets/images/2.png"
+                            alt="Carga de archivos XML CFDI"
+                            class="carousel-image"
+                            loading="lazy"
+                        />
+                    </div>
+
+                    <div class="slide">
+                        <img
+                            src="assets/images/3.png"
+                            alt="Reporte PDF generado por la aplicación"
+                            class="carousel-image"
+                            loading="lazy"
+                        />
+                    </div>
+
+                    <div class="slide">
+                        <img
+                            src="assets/images/4.png"
+                            alt="Reporte PDF generado por la aplicación"
+                            class="carousel-image"
+                            loading="lazy"
+                        />
+                    </div>
+
+                    <div class="slide">
+                        <img
+                            src="assets/images/5.png"
+                            alt="Reporte PDF generado por la aplicación"
+                            class="carousel-image"
+                            loading="lazy"
+                        />
+                    </div>
+
+                    <div class="slide">
+                        <img
+                            src="assets/images/6.png"
+                            alt="Reporte PDF generado por la aplicación"
+                            class="carousel-image"
+                            loading="lazy"
+                        />
+                    </div>
+
+                    <div class="slide">
+                        <img
+                            src="assets/images/7.png"
+                            alt="Reporte PDF generado por la aplicación"
+                            class="carousel-image"
+                            loading="lazy"
+                        />
+                    </div>
+
+                </div>
+
+                <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">‹</button>
+                <button class="carousel-btn next" id="nextBtn" aria-label="Siguiente">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Descarga -->
+    <section class="section download">
+        <div class="container download-content">
+            <h2>Descarga de la demo</h2>
+            <p>Esta versión se distribuye como carpeta portable. No se comercializa como producto final.</p>
+            <a href="assets/downloads/AnalizadorCFDI.zip" class="btn btn-primary">Descargar Analizador CFDI (.zip)</a>
+            <p class="note">Se desarrollan versiones personalizadas según necesidades.</p>
+        </div>
+    </section>
+
+    <!-- Cómo se usa -->
+    <section class="section steps bg-subtle">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Cómo se usa?</h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step">
+                    <span class="step-num">1</span>
+                    <p>Descarga la demo</p>
+                </div>
+                <div class="step">
+                    <span class="step-num">2</span>
+                    <p>Extrae la carpeta</p>
+                </div>
+                <div class="step">
+                    <span class="step-num">3</span>
+                    <p>Ejecuta AnalizadorCFDI.exe</p>
+                </div>
+                <div class="step">
+                    <span class="step-num">4</span>
+                    <p>Carga tus XML</p>
+                </div>
+                <div class="step">
+                    <span class="step-num">5</span>
+                    <p>Visualiza y Exporta</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section contact">
+        <div class="container">
+            <h2>¿Necesitas una versión personalizada?</h2>
+            <div class="social-links">
+                <a
+                    href="https://wa.me/525534806184?text=Hola%20Erick%2C%20vengo%20desde%20el%20proyecto%20Analizador%20CFDI%20(XML)%20y%20me%20interesa%20personalizar%20una%20versi%C3%B3n%20para%20mi%20caso."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline"
+                >
+                    WhatsApp
+                </a>
+
+                <a
+                    href="https://www.facebook.com/profile.php?id=61584844233250"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline"
+                >
+                    Facebook
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>Analizador CFDI — Demo técnica</p>
+            <p class="copyright">by EDDP | Hecho por Erick Domínguez &copy; <script>document.write(new Date().getFullYear())</script></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
